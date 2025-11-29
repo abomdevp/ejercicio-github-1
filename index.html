@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Receta de Panqueques</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Receta de Panqueques</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>  
+                    <a href="index.html" >Inicio</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Los panqueques más ricos y fáciles</h2>
+            <p>Una receta rápida y versátil para preparar panqueques perfectos, ideales para dulce o salado.</p>
+            
+            <img src="img/panqueques.avif" alt="Panqueques servidos con miel" width="400" />
+
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>1 taza de Harina</li>
+                <li>1 taza de Leche</li>
+                <li>2 Huevos</li>
+                <li>1 cucharada de Mantequilla derretida</li>
+                <li>1 pizca de Sal</li>
+                <li>Opcional: 1 cucharadita de azúcar o vainilla</li>
+            </ul>
+
+            <h3>Preparación</h3>
+            <ol>
+                <li>En un bol, mezclar la harina con la sal.</li>
+                <li>Agregar los huevos y batir.</li>
+                <li>Incorporar la leche poco a poco hasta lograr una mezcla homogénea.</li>
+                <li>Agregar la mantequilla derretida y mezclar.</li>
+                <li>Calentar una sartén antiadherente y verter un poco de mezcla.</li>
+                <li>Cocinar 1 minuto por lado o hasta que esté dorado.</li>
+                <li>Servir con miel, manjar, frutas o lo que prefieras.</li>
+            </ol>
+
+            <h4>Información Nutricional (por panqueque)</h4>
+            <table>
+                <tr>
+                    <td>Componente</td>
+                    <td>Cantidad</td>
+                </tr>
+                <tr>
+                    <td>Calorías</td>
+                    <td>90 kcal</td>
+                </tr>
+                <tr>
+                    <td>Grasa</td>
+                    <td>3g</td>
+                </tr>
+                <tr>
+                    <td>Carbohidratos</td>
+                    <td>12g</td>
+                </tr>
+            </table>
+
+        </main>
+        <aside>
+            <h3>Datos Curiosos</h3>
+            <p>El panqueque existe en distintas formas en casi todas las culturas. En Francia se conocen como crêpes y en Estados Unidos como pancakes.</p>
+            <p>La receta básica es tan simple que casi no ha cambiado en cientos de años.</p>
+        </aside>
+        <section>
+            <h2>¡Contáctanos!</h2>
+            <p>¿Probaste la receta? ¡Déjanos tu opinión!</p>
+
+            <form>
+                <div>
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" placeholder="Escribe tu nombre" id="nombre" name="nombre_usuario"/>
+                </div>
+                <div>
+                    <p>¿Quieres recibir nuestro newsletter mensual?</p>
+                    <input type="radio" id="si_newsletter" name="newsletter" value="si" checked>
+                    <label for="si_newsletter">Sí, por favor</label>
+                    <br>
+                    <input type="radio" id="no_newsletter" name="newsletter" value="no" >
+                    <label for="no_newsletter">No, gracias</label>
+                </div>
+
+                <div>
+                    <label for="tipo_receta" >¿Cuál es tu tipo de receta favorita?</label>
+                    <select id="tipo_receta" name="tipo_receta_favorita">
+                        <option value="">Elige una opción...</option>
+                        <option value="dulce">Dulce</option>
+                        <option value="salado">Salado</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Comentario">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>Copyright 2025 - Esta Receta es para mis alumnos , solo para ellos</p>
+        </footer>
+    </body>
+</html>
