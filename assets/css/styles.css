@@ -1,0 +1,120 @@
+/* ==================================
+   ESTILOS BASE (MOBILE FIRST)
+   (Para pantallas pequeñas)
+   ================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%; /* En móvil, ocupa todo */
+    margin: 0;
+    /* Usamos box-sizing para que el padding no afecte el ancho total */
+    box-sizing: border-box; 
+    padding: 15px; /* Menos padding */
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4a4a4a;
+}
+
+/* Títulos más pequeños en móvil */
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+
+img {
+    width: 100%;
+    height: auto;
+    /* Añadimos border-radius aquí también */
+    border-radius: 4px; 
+}
+
+#header-principal {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.datos-curiosos {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #a0522d;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px dotted #ccc;
+    padding: 8px; /* Menos padding en tabla */
+    text-align: left;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+/* Demo de Jerarquía */
+h2 { color: blue; }
+.titulo-receta { color: green; }
+
+
+/* ==================================
+   ESTILOS DE ESCRITORIO (Pantallas Grandes)
+   ================================== */
+
+/* Estos estilos se aplican SI la pantalla mide 769px O MÁS [cite: 368-372] */
+@media only screen and (min-width: 769px) {
+
+    /* Hacemos que el contenedor vuelva a ser una caja centrada */
+    .container {
+        width: 800px; /* Le devolvemos su ancho fijo */
+        margin: 30px auto; /* Lo centramos */
+        padding: 40px; /* Le devolvemos su padding original */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    /* Aumentamos el tamaño de los títulos en escritorio */
+    h1 { font-size: 40px; } /* Tamaño original */
+    h2 { font-size: 32px; }
+    h3 { font-size: 24px; }
+
+    img {
+        border-radius: 8px; /* Bordes más pronunciados en escritorio */
+    }
+
+    #header-principal {
+        padding-bottom: 20px;
+    }
+
+    .datos-curiosos {
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+
+    th, td {
+        padding: 10px; /* Padding original de la tabla */
+    }
+}
